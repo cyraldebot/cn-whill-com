@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cyraldebot.github.io/cn-whill-com/sitemap.xml

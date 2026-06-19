@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>威廉希尔 - 站点介绍与可信说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f5f0;
+            color: #2c2b28;
+            font-family: 'Georgia', 'Times New Roman', '宋体', 'SimSun', serif;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: #eae7e0;
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            margin-bottom: 3rem;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+            text-align: center;
+            border-left: 6px solid #b7a68b;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #3c3a35;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #71706a;
+            border-top: 1px solid #d6d0c6;
+            padding-top: 1.2rem;
+            max-width: 520px;
+            margin: 0 auto;
+            font-style: normal;
+        }
+
+        .intro-block {
+            background: #ffffffec;
+            padding: 2rem 2.2rem;
+            border-radius: 20px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .intro-block p {
+            margin-bottom: 1.2rem;
+            text-indent: 2em;
+        }
+
+        .intro-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card {
+            background: #ffffffec;
+            border-radius: 20px;
+            padding: 1.8rem 1.8rem 2rem;
+            flex: 1 1 240px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            border-bottom: 3px solid #d6cdbc;
+            transition: all 0.15s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-bottom-color: #b7a68b;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #4b4842;
+            border-left: 4px solid #c4b7a4;
+            padding-left: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card ul li {
+            padding: 0.35rem 0;
+            font-size: 0.96rem;
+            color: #3f3d38;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .card ul li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: #9f917e;
+            font-weight: bold;
+        }
+
+        .quote-block {
+            background: #efebe4;
+            padding: 1.8rem 2rem;
+            border-radius: 18px;
+            margin-bottom: 2.5rem;
+            border-left: 5px solid #b7a68b;
+            font-style: normal;
+            color: #3e3b35;
+        }
+
+        .quote-block p {
+            margin-bottom: 0.7rem;
+        }
+
+        .quote-block .source {
+            margin-top: 0.8rem;
+            font-size: 0.9rem;
+            color: #7b776e;
+            text-align: right;
+        }
+
+        .faq-summary {
+            background: #fcfaf7;
+            border-radius: 20px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e3ddd2;
+        }
+
+        .faq-summary h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #4b4842;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed #d6cdbc;
+            padding-bottom: 0.5rem;
+        }
+
+        .faq-item {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #ede8df;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #3c3a35;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-a {
+            color: #5c5951;
+            font-size: 0.96rem;
+            padding-left: 0.8rem;
+        }
+
+        .natural-link {
+            background: #eeebe5;
+            padding: 1.2rem 2rem;
+            border-radius: 30px;
+            text-align: center;
+            margin: 2rem 0 1.5rem;
+            font-size: 1rem;
+            color: #3f3d38;
+        }
+
+        .natural-link a {
+            color: #6b5d4b;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a68b;
+            font-weight: 500;
+            transition: border 0.2s;
+        }
+
+        .natural-link a:hover {
+            border-bottom: 2px solid #7f6e58;
+        }
+
+        .footer-note {
+            font-size: 0.82rem;
+            text-align: center;
+            color: #8f8980;
+            padding-top: 2rem;
+            border-top: 1px solid #e2dbd0;
+            margin-top: 2.5rem;
+            letter-spacing: 0.3px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+            .hero {
+                padding: 2rem 1.2rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .intro-block {
+                padding: 1.5rem 1.2rem;
+            }
+            .card-grid {
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+            .card {
+                padding: 1.3rem;
+            }
+            .quote-block {
+                padding: 1.2rem 1.2rem;
+            }
+            .faq-summary {
+                padding: 1.2rem 1.2rem;
+            }
+            .natural-link {
+                padding: 1rem 1rem;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>威廉希尔</h1>
+        <div class="sub">一个值得了解的站点 · 信息与可信说明</div>
+    </div>
+
+    <div class="intro-block">
+        <p>在互联网信息繁杂的今天，找到一个内容清晰、定位明确的站点并不容易。本文所介绍的 <strong>威廉希尔</strong>，是一个以特定领域资讯与互动为主体的网络平台。网站整体风格稳重，内容组织偏向实用与信息整合，适合希望获取结构化参考的用户。</p>
+        <p>我们尝试从站点本身的结构出发，梳理其用途、适用人群以及一些使用中值得留意的细节，帮助初次接触的访客建立更全面的认知。以下内容基于公开信息整理，不构成任何形式的推荐或诱导。</p>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>主要用途</h3>
+            <ul>
+                <li>提供分类清晰的信息与资源索引</li>
+                <li>围绕特定主题聚合相关内容</li>
+                <li>保持界面简洁，减少干扰元素</li>
+                <li>适合快速浏览与定向查找</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>适合人群</h3>
+            <ul>
+                <li>对相关领域有初步了解需求的用户</li>
+                <li>偏好信息密度适中、无过度渲染的读者</li>
+                <li>希望直接获取内容而非频繁跳转的访客</li>
+                <li>注重站点稳定性和基础可用性的人群</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="quote-block">
+        <p>「一个站点的价值，不在于它承诺了什么，而在于它提供了什么。威廉希尔在内容组织上保持了一贯的克制，留给访客自己判断的空间。」</p>
+        <div class="source">—— 摘自一位长期用户的站点笔记</div>
+    </div>
+
+    <div class="faq-summary">
+        <h2>常见疑问摘要</h2>
+        <div class="faq-item">
+            <div class="faq-q">▪ 这个网站主要提供什么？</div>
+            <div class="faq-a">网站围绕特定主题整合信息，以文字和基本交互为主，不做过多包装，内容偏向实用与参考。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">▪ 内容是否可靠？</div>
+            <div class="faq-a">所有公开信息均保持原始呈现，不添加主观判断。访客可根据自身需求进一步核实。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">▪ 适合首次访问吗？</div>
+            <div class="faq-a">界面直观，无需注册或额外操作即可浏览主要板块，初次使用几乎没有学习成本。</div>
+        </div>
+    </div>
+
+    <div class="natural-link">
+        如果你希望进一步了解相关内容，可以直接访问 <a href="https://cn-whill.com">威廉希尔</a>，查看站点本身的信息布局与细节。
+    </div>
+
+    <div class="footer-note">
+        本页为独立介绍页面，与所提及站点无直接隶属关系。内容仅供信息参考，请自行判断。
+    </div>
+
+</body>
+</html>
